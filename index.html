@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baby Shower de Emma</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow">Una celebración muy especial</span>
+      <h1>Baby Shower de <span>Emma</span></h1>
+      <p class="lead">Una pequeña vida está por llegar y queremos celebrar este momento contigo.</p>
+      <div class="hero-actions">
+        <a href="#detalles" class="btn primary">Ver invitación</a>
+        <a href="#regalos" class="btn ghost">Ver regalos</a>
+      </div>
+    </div>
+    <div class="floating-card">
+      <div class="mini-icon">☁️</div>
+      <div>
+        <strong>Cuenta regresiva</strong>
+        <div id="countdown" class="countdown">Cargando...</div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="detalles" class="section intro">
+      <div class="section-title">
+        <span>Te esperamos</span>
+        <h2>Un día para celebrar</h2>
+        <p>Queremos compartir contigo la alegría de esta nueva etapa.</p>
+      </div>
+
+      <div class="details-grid">
+        <article class="info-card">
+          <div class="icon">📅</div>
+          <h3>Fecha</h3>
+          <p>Sábado 24 de octubre de 2026</p>
+        </article>
+        <article class="info-card">
+          <div class="icon">🕒</div>
+          <h3>Hora</h3>
+          <p>3:00 p. m.</p>
+        </article>
+        <article class="info-card">
+          <div class="icon">📍</div>
+          <h3>Lugar</h3>
+          <p>Bogotá, Colombia</p>
+          <a href="https://maps.google.com" target="_blank" rel="noopener">Abrir mapa</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section message-section">
+      <div class="message-card">
+        <div class="baby-badge">🧸</div>
+        <h2>Con mucho amor</h2>
+        <p>
+          Tu compañía es el mejor regalo. Si además quieres consentir a Emma,
+          preparamos una lista de detalles para que puedas elegir y apartar uno fácilmente.
+        </p>
+      </div>
+    </section>
+
+    <section id="regalos" class="section gifts-section">
+      <div class="section-title">
+        <span>Lista de regalos</span>
+        <h2>Elige un detalle para Emma</h2>
+        <p>Cuando apartes un regalo quedará marcado en este dispositivo. Más abajo te explico cómo hacerlo compartido para todos con Google Sheets.</p>
+      </div>
+
+      <div id="giftList" class="gift-grid"></div>
+    </section>
+
+    <section class="section rsvp-section">
+      <div class="rsvp-card">
+        <div>
+          <span class="eyebrow dark">Confirmación</span>
+          <h2>¿Nos acompañas?</h2>
+          <p>Puedes confirmar asistencia directamente por WhatsApp.</p>
+        </div>
+        <a class="btn whatsapp" target="_blank" rel="noopener"
+           href="https://wa.me/573000000000?text=Hola%2C%20confirmo%20mi%20asistencia%20al%20Baby%20Shower%20de%20Emma">
+           Confirmar por WhatsApp
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hecho con 💕 para celebrar la llegada de Emma.</p>
+  </footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-box">
+      <button id="closeModal" class="close-btn" aria-label="Cerrar">×</button>
+      <div class="modal-icon">🎁</div>
+      <h3 id="modalTitle">Apartar regalo</h3>
+      <p>Escribe tu nombre para reservar este detalle.</p>
+      <input id="guestName" type="text" placeholder="Tu nombre" />
+      <button id="confirmGift" class="btn primary full">Apartar regalo</button>
+      <p class="small-note">En esta versión de prueba la reserva se guarda solo en este dispositivo.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
