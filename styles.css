@@ -104,3 +104,94 @@
   .location-line small{font-size:.72rem}
   .calendar-pill{font-size:.76rem;padding:0 15px}
 }
+
+/* Tarjeta principal de fecha - inspirada en el diseño original */
+.event-summary{
+  width:min(590px,94%) !important;
+  max-width:590px !important;
+  margin:34px auto 18px !important;
+  padding:20px 24px !important;
+  display:grid !important;
+  grid-template-columns:1fr 1px 1.35fr 1px 1fr !important;
+  align-items:center !important;
+  gap:18px !important;
+  background:rgba(255,255,255,.70) !important;
+  border:1px solid #dfc5b4 !important;
+  border-radius:25px !important;
+  box-shadow:0 10px 28px rgba(105,70,80,.055) !important;
+  backdrop-filter:blur(7px);
+}
+.event-summary .event-cell{
+  min-width:0 !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:9px !important;
+}
+.event-summary .event-cell small{
+  display:block !important;
+  font-family:"DM Sans",Arial,sans-serif !important;
+  font-size:.70rem !important;
+  line-height:1.1 !important;
+  font-weight:700 !important;
+  letter-spacing:.15em !important;
+  color:#876e76 !important;
+  white-space:nowrap !important;
+}
+.event-summary .event-cell strong{
+  display:block !important;
+  font-family:"DM Sans",Arial,sans-serif !important;
+  font-size:1.34rem !important;
+  line-height:1.2 !important;
+  font-weight:700 !important;
+  color:#4f4146 !important;
+  white-space:nowrap !important;
+}
+.event-summary .event-cell:nth-of-type(2) strong{
+  color:#a75f72 !important;
+}
+.event-separator{
+  display:block !important;
+  width:1px !important;
+  height:48px !important;
+  background:#dfc5b4 !important;
+}
+.location-line{
+  margin-top:4px !important;
+  margin-bottom:11px !important;
+}
+.calendar-pill{
+  margin-top:4px !important;
+  margin-bottom:20px !important;
+}
+@media(max-width:560px){
+  .event-summary{
+    width:calc(100% - 24px) !important;
+    padding:17px 11px !important;
+    gap:8px !important;
+    grid-template-columns:.82fr 1px 1.5fr 1px .82fr !important;
+    border-radius:21px !important;
+  }
+  .event-summary .event-cell{gap:7px !important}
+  .event-summary .event-cell small{
+    font-size:.56rem !important;
+    letter-spacing:.10em !important;
+  }
+  .event-summary .event-cell strong{
+    font-size:1.04rem !important;
+  }
+  .event-summary .event-cell:nth-of-type(2) strong{
+    font-size:1rem !important;
+  }
+  .event-separator{height:42px !important}
+}
+@media(max-width:360px){
+  .event-summary{
+    padding:15px 8px !important;
+    gap:5px !important;
+  }
+  .event-summary .event-cell small{font-size:.50rem !important}
+  .event-summary .event-cell strong{font-size:.94rem !important}
+  .event-summary .event-cell:nth-of-type(2) strong{font-size:.90rem !important}
+}
