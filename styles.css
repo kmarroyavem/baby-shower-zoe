@@ -21,3 +21,86 @@
 .event-location small{font-size:.62rem;letter-spacing:.14em;font-weight:700;color:#b49568}
 .event-location strong{margin-top:3px;font-size:.88rem;color:#57474c}
 .event-location div span{margin-top:2px;font-size:.78rem;color:#89777d}
+
+/* Hero refinado: conserva el estilo original y mejora legibilidad */
+.elegant-date{
+  max-width:520px !important;
+  margin:32px auto 16px !important;
+  padding:17px 22px !important;
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:25px !important;
+  background:rgba(255,255,255,.68) !important;
+  border:1px solid rgba(185,149,98,.26) !important;
+  border-radius:22px !important;
+  box-shadow:0 14px 35px rgba(105,70,80,.08) !important;
+}
+.elegant-date .date-part{
+  min-width:120px !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  gap:5px !important;
+}
+.elegant-date small{
+  font-family:"DM Sans",sans-serif !important;
+  font-size:.67rem !important;
+  line-height:1.25 !important;
+  font-weight:700 !important;
+  letter-spacing:.14em !important;
+  color:#8a747b !important;
+}
+.elegant-date strong{
+  font-family:"DM Sans",sans-serif !important;
+  font-size:1.55rem !important;
+  line-height:1.15 !important;
+  font-weight:700 !important;
+  color:#57474c !important;
+}
+.elegant-date .event-time{font-size:1.25rem !important;color:#b86f83 !important}
+.date-divider{width:1px;height:45px;background:#dec9b2;flex:0 0 1px}
+.location-line{
+  max-width:520px;
+  margin:0 auto 13px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:9px;
+  color:#67565b;
+}
+.location-line .pin{font-size:1.2rem;color:#b99562}
+.location-line div{display:flex;flex-direction:column;text-align:left}
+.location-line strong{font-size:.84rem;line-height:1.35}
+.location-line small{margin-top:2px;font-size:.76rem;color:#8a777d}
+.calendar-pill{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:7px;
+  min-height:42px;
+  margin:4px auto 14px;
+  padding:0 17px;
+  border:1px solid #dfc8cf;
+  border-radius:999px;
+  background:rgba(255,255,255,.72);
+  color:#9e6071;
+  text-decoration:none;
+  font-family:"DM Sans",sans-serif;
+  font-size:.78rem;
+  font-weight:700;
+  box-shadow:0 7px 18px rgba(105,70,80,.07);
+}
+.calendar-pill span{font-size:1.15rem;font-weight:400}
+@media(max-width:560px){
+  .elegant-date{width:100%;max-width:390px !important;gap:14px !important;padding:15px 12px !important}
+  .elegant-date .date-part{min-width:0 !important;flex:1}
+  .elegant-date .date-center{flex:1.5}
+  .elegant-date small{font-size:.60rem !important;letter-spacing:.10em !important}
+  .elegant-date strong{font-size:1.42rem !important}
+  .elegant-date .event-time{font-size:1.12rem !important}
+  .location-line{max-width:370px;padding:0 10px;align-items:flex-start}
+  .location-line strong{font-size:.78rem}
+  .location-line small{font-size:.72rem}
+  .calendar-pill{font-size:.76rem;padding:0 15px}
+}
